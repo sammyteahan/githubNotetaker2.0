@@ -8,7 +8,7 @@ import { Router, Route, DefaultRoute } from 'react-router';
 
 export default (
   <Route name="app" path="/" handler={Main}>
-    <Route name="profile" path="profile/:username" handler={Profile} />
     <DefaultRoute handler={Home} />
+    <Route name="profile" path="profile/:username" handler={Profile} />
   </Route>
 );
