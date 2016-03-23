@@ -66,14 +66,12 @@ class Profile extends React.Component {
     this.init();
   }
   
-  /**
-  *
-  */
   handleAddNote(newNote) {
     base.post(this.router.getCurrentParams().username, {
       data: this.state.notes.concat([newNote])
     });
   }
+  
   render() {
     var username = this.router.getCurrentParams().username;
     return (

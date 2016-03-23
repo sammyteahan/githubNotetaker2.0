@@ -8,8 +8,8 @@ import routes from './config/routes';
 * to render. So, our `Root` component will be decided
 * in ./configs/routes.js
 *
-* state spread will take stuff from the router and make it
-* accessible to props of our root component.
+* state spread will take stuff (props) from the router
+* and make it accessible to props of our root component.
 */
 Router.run(routes, (Root, state) => {
   React.render(<Root {...state} />, document.getElementById('app'));
